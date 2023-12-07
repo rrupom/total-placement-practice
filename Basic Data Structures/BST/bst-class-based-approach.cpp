@@ -26,15 +26,15 @@ class BST {
 		return NULL;
 	}
 
-	Node* inserNode(Node* root, int x) {
+	Node* insertNode(Node* root, int x) {
 		if (root == NULL) {
 			return new Node(x);
 		}
 
 		if (root->key > x) {
-			root->left = inserNode(root->left, x);
+			root->left = insertNode(root->left, x);
 		} else if (root->key < x) {
-			root->right = inserNode(root->right, x);
+			root->right = insertNode(root->right, x);
 		}
 
 		return root;
@@ -110,7 +110,7 @@ public:
 	}
 
 	void insert(int x) {
-		root = inserNode(root, x);
+		root = insertNode(root, x);
 	}
 
 	void remove(int x) {
@@ -129,6 +129,29 @@ public:
 			cout << "Element found\n";
 		} else {
 			cout << "Element Not Found\n";
+		}
+	}
+
+	void labelOrderTraversal(Node* root) {
+		if (root == NULL) {
+			return;
+		}
+
+		queue<Node*> q;
+
+		q.push(root->key);
+
+		while (!q.empty()) {
+			Node *node = q.front();
+			cout << node->key;
+			q.pop();
+
+			if (node->left != NULL) {
+				q.push(node->left)
+			}
+			if (node->right != NULL) {
+				q.push(node->right)
+			}
 		}
 	}
 };
