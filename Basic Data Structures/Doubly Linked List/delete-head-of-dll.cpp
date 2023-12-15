@@ -17,6 +17,7 @@ Node* deleteHeadDLL(Node* head) {
 	head = head->next;
 	head->prev = NULL;
 	delete temp;
+
 	return head;
 }
 

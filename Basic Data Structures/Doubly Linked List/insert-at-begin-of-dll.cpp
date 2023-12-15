@@ -18,6 +18,7 @@ Node* insertAtBegin(Node* head, int data) {
 	}
 	head->prev = temp;
 	temp->next = head;
+
 	return temp;
 }
 
