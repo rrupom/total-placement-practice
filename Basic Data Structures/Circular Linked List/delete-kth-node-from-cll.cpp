@@ -28,7 +28,9 @@ Node* deleteKthNodeNaive(Node* head, int k) {
 
 	Node* temp = cur->next;
 	cur->next = temp->next;
+
 	delete temp;
+
 	return head;
 
 }
