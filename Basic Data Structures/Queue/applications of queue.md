@@ -1,0 +1,13 @@
+## Applications of queue
+- Single Resource and Multple Consumers to be served in their arrival order
+- Synchronization between slow and fasr devices
+- In OS	
+	- semaphors
+	- FCFS scheduling
+	- spooling in printers (only one process can use printers at a time)
+	- Buffer for device like keyboard
+- In Networks
+	- queue in routers / switches
+	- mail queue
+- many real world application like doctor's queue
+- Variations (deque, priority_queue and doubly ended priority queue)
