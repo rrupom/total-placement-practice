@@ -21,7 +21,10 @@ int normalMaxSum(int arr[], int n) {
 }
 
 int overallMaxSum(int arr[], int n) {
+
 	int max_normal = normalMaxSum(arr, n);
+
+	// all the elements are negetive. So this is the maximum sum possible.
 	if (max_normal < 0) return max_normal;
 
 	int arr_sum = 0;
