@@ -7,7 +7,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void longestConSubsequenceWithHashing(vector<int> v) {
+void longestConsecutiveSubsequenceWithHashing(vector<int> v) {
 	/* Algorithm:
 	- initialize res = 0
 	- create a hash table h
@@ -35,6 +35,7 @@ void longestConSubsequenceWithHashing(vector<int> v) {
 			int cur = 1;
 			int element = v[i];
 			while (mp.find(element + 1) != mp.end()) {
+				// searching for next element
 				cur++;
 				element++;
 			}
@@ -46,7 +47,7 @@ void longestConSubsequenceWithHashing(vector<int> v) {
 
 }
 
-void longestConSubsequenceWithSorting(vector<int> v) {
+void longestConsecutiveSubsequenceWithSorting(vector<int> v) {
 	sort(v.begin(), v.end());
 	int res = 1;
 	int cur = 1;
@@ -92,8 +93,8 @@ int32_t main()
 	vector<int> v;
 	takeVectorInput(v);
 
-	longestConSubsequenceWithSorting(v);
-	longestConSubsequenceWithHashing(v);
+	longestConsecutiveSubsequenceWithSorting(v);
+	longestConsecutiveSubsequenceWithHashing(v);
 
 	return 0;
 }
