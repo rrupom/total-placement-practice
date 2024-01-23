@@ -1,7 +1,7 @@
 /*
-	Problem : Longest subarry with equal number of 0's ans 1's
-	For efficient solution convert evert 0 value with -1. then the problem converts to
-	logest subarray with 0 sum
+	Problem: Longest subarray with an equal number of 0's and 1's
+	For an efficient solution convert every 0 value with -1. then the problem converts to
+	the longest subarray with 0 sum
 */
 
 #include<bits/stdc++.h>
