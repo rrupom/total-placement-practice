@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void countUnionELements(vector<int> a,vector<int> b) {
+void countUnionELements(vector<int> a, vector<int> b) {
 	unordered_set<int> s;
 
 	for (int i = 0; i < a.size(); i++) {
