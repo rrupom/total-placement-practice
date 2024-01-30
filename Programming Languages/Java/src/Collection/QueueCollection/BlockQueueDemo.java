@@ -17,16 +17,16 @@ public class BlockQueueDemo {
         System.out.println("The LinkedBlockingQeque contains: " + bq);
         bq.remove(86);
         bq.remove(44);
-        System.out.println("The LinkedBlockingQueue contains: "+bq);
+        System.out.println("The LinkedBlockingQueue contains: " + bq);
 
-//        iterating through the elements
+        // iterating through the elements
         Iterator iterator = bq.iterator();
 
-        for(int i=0;i<bq.size();i++) {
-//            System.out.print(iterator.next() + " ");
+        for (int i = 0; i < bq.size(); i++) {
+            // System.out.print(iterator.next() + " ");
         }
         System.out.println("");
-        while(iterator.hasNext()) {
+        while (iterator.hasNext()) {
             System.out.print(iterator.next() + " ");
         }
     }
