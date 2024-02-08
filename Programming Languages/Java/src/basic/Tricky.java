@@ -4,6 +4,10 @@ package basic;
  * Why does the following code not generated NullPointerException at runtime
  */
 
+/**
+ * TODO: Revise all the codes done by you
+ */
+
 class Name {
     String name;
 

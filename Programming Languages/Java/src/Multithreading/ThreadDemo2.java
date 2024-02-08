@@ -3,13 +3,13 @@ package Multithreading;
 class NewThread2 extends Thread {
     NewThread2() {
         super("Demo Thread");
-        System.out.println("Child Thread: "+this);
+        System.out.println("Child Thread: " + this);
     }
 
     public void run() {
         try {
-            for(int i=5;i>0;i--) {
-                System.out.println("Child Thread: "+i);
+            for (int i = 5; i > 0; i--) {
+                System.out.println("Child Thread: " + i);
                 Thread.sleep(500);
             }
         } catch (InterruptedException e) {
@@ -25,9 +25,12 @@ public class ThreadDemo2 {
         nt.start();
 
         try {
-            for(int i=5;i>0;i--) {
-                System.out.println("Main Thread: "+i);
+            for (int i = 5; i > 0; i--) {
+                System.out.println("Main Thread: " + i);
                 Thread.sleep(1000);
+            }
+            for (int i = 100; i < 1000; i++) {
+
             }
         } catch (InterruptedException e) {
             System.out.println("Main thread exception");
