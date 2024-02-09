@@ -26,12 +26,12 @@ public:
 	void minHeapify(int i) {
 		int left = getLeft(i);
 		int right = getRight(i);
-		int smallest = i;
+		int smallest = I;
 
-		if (left < size and arr[i] > arr[left]) {
+		if (left < size and arr[smallest] > arr[left]) {
 			smallest = left;
 		}
-		if (right <size and arr[i] > arr[right]) {
+		if (right <size and arr[smallest] > arr[right]) {
 			smallest = right;
 		}
 		if (smallest != i) {
