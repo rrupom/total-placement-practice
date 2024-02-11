@@ -14,7 +14,7 @@ vector<int> createLPS(string pattern) {
 			if (index != 0) {
 				index = lps[index - 1];
 			} else {
-				lps[index] = index;
+				// lps[index] = index; already has 0
 				++i;
 			}
 		}
@@ -32,7 +32,7 @@ void kmp(string text, string pattern) {
 			++i, ++j;
 		} else {
 			if (j != 0) {
-				j = pattern[j - 1];
+				j = lps[j - 1];
 			} else {
 				++i;
 			}
