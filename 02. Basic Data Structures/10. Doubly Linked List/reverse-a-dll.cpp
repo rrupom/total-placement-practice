@@ -24,7 +24,7 @@ Node* reverseDLL(Node* head) {
 		cur->next = prev;
 
 		// next iteration
-		cur = cur->next;
+		cur = cur->prev;
 	}
 
 	return prev;
