@@ -26,6 +26,16 @@ int overallMaxSum(int arr[], int n) {
 
 	// all the elements are negetive. So this is the maximum sum possible.
 	if (max_normal < 0) return max_normal;
+	/**
+	 * Importance of this condition
+	 * Suppose arr[] = {-5, -3}
+	 * max_normal = -3
+	 * arr_sum = -8, 
+	 * converted array arr[] = {5, 3}
+	 * max_circular_sum = 8 - 8 = 0
+	 * so result will be max(0, -3) => 0 (incorrect result)
+	 * so this condition is optimizing out code and also giving the correct result
+	 */
 
 	int arr_sum = 0;
 	for (int i = 0; i < n; i++) {

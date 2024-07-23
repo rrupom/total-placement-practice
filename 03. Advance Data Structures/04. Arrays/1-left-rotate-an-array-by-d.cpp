@@ -28,7 +28,7 @@ int32_t main()
 		cin >> arr[i];
 	}
 
-	int rotation;
+	int rotation; 
 	cin >> rotation;
 
 	leftRotation(arr, n, rotation);

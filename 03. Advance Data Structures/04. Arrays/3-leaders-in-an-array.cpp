@@ -6,7 +6,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-vector<int> findLeadersNaive(vector<int> v) {
+vector<int> findLeadersEfficient(vector<int> v) {
 	vector<int> ans;
 
 	int mn = INT_MIN;
@@ -37,7 +37,7 @@ int32_t main()
 		v.push_back(x);
 	}
 
-	vector<int> ans = findLeadersNaive(v);
+	vector<int> ans = findLeadersEfficient(v);
 
 	for (int i = ans.size() - 1; i >= 0; i--) {
 		cout << ans[i] << " \n" [i == 0];

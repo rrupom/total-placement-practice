@@ -10,7 +10,7 @@ bool isPresent(int arr[], int n, int targetSum) {
 	int cur_sum = arr[0];
 	int s = 0;
 
-	for (int e = 1; i < n; i++) {
+	for (int e = 1; e < n; e++) {
 		// clean the previous window
 		while (cur_sum > targetSum and s < e - 1) {
 			cur_sum -= arr[s++];
