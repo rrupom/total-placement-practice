@@ -20,8 +20,8 @@ Node* reverseDLL(Node* head) {
 
 		// swapping prev and next pointer
 		prev = cur->prev;
-		cur->prev = cur->next;
-		cur->next = prev;
+		cur->next = cur->prev;
+		cur->prev = prev;
 
 		// next iteration
 		cur = cur->next;

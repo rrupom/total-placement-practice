@@ -25,7 +25,7 @@ int32_t main()
 	int a1[n];
 
 	for (int i = 0; i < n; i++) {
-		cin >> a[i];
+		cin >> a1[i];
 	}
 
 	int m;
